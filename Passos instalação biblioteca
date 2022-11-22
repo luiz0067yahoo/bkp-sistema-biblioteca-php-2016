@@ -1,0 +1,22 @@
+﻿1. sudo apt-get install apache2
+
+2. sudo apt-get install mysql-server
+
+3. sudo apt-get install php7.0 libapache2-mod-php7.0  php7.0-gd php7.0-mysql
+
+4. alterar $id_escola no arquivo "action/escola.php"
+
+5. colocar a escola atual na primeira opção no arquivo "consulta.php"
+(A escola atual deve estar na linha 56)
+
+6. sudo mysql -u root
+
+6.1. create database biblioteca;
+
+6.2. use biblioteca;
+
+6.3. executar todos os comandos do arquivo "backup/criacao.sql".
+
+7. colocar todos os arquivos do repositorio na pasta "/var/www/html"
+
+8. dar permissoes 777 para a pasta "/var/www/html"

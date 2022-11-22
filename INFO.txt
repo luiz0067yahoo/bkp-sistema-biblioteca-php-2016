@@ -1,0 +1,2 @@
+﻿>Adicionado logo da UTF e SMED no banner
+>Adicionado "Todos os Livros" em relatórios

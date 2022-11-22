@@ -1,0 +1,41 @@
+Mudar dominio:
+Step 1: Go to C:\Windows\System32\drivers\etc and edit “as Administrator” => hosts file.
+Add in end of file:
+
+127.0.0.1   biblioteca
+
+Save and close.
+
+Step 2: Go to C:\xampp\apache\conf\extra and edit httpd-vhosts.conf file.
+Add in end of file:
+
+<VirtualHost *:80>
+    ServerName www.biblioteca.com
+    ServerAlias biblioteca.com
+    DocumentRoot c:/xampp/htdocs/biblioteca
+</VirtualHost>
+
+
+Xampp shell:
+
+mysql -u root
+CREATE DATABASE biblioteca CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE biblioteca;
+source C:\Path\to\file.sql;
+
+Backup:
+
+# mysqldump --opt -u root -p biblioteca > backup.sql
+
+
+alterar endereco do backup no export/import
+alterar escola padrao em consulta.php?id=2
+permitir popup na imprecao de emprestimo
+
+
+
+INSTALAÇÃO LINUX:
+sudo apt-get install apache2
+sudo apt-get install mysql
+sudo apt-get install php7.0 libapache2-mod-php7.0  php7.0-gd
+sudo service apache2 restart

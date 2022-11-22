@@ -1,0 +1,3 @@
+criada nova variavel de conexao com o nome $conexao para protecao de sql inject
+alterado o filtro no arquivo impressao.php no bloco de etiquetas
+alterado o sql da consulta o arquivo action-imprimeetiqueta.php
